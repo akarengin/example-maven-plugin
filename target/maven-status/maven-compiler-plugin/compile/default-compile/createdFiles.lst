@@ -1,0 +1,4 @@
+com\okta\example\RuntimeExecVersionProvider.class
+com\okta\example\GitVersionMojo.class
+META-INF\sisu\javax.inject.Named
+com\okta\example\VersionProvider.class

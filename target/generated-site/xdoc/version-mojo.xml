@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>example:version</title>
+  </properties>
+  <body>
+    <section name="example:version">
+      <p><strong>Full name</strong>:</p>
+      <p>com.okta.example:example-maven-plugin:0.0.1-SNAPSHOT:version</p>
+      <p><strong>Description</strong>:</p>
+      <div>An example Maven Mojo that resolves the current project's git
+revision and adds that a new <code>exampleVersion</code> property
+to the current Maven project.</div>
+      <p><strong>Attributes</strong>:</p>
+      <ul>
+        <li>Requires a Maven project to be executed.</li>
+        <li>Binds by default to the <a href="http://maven.apache.org/ref/current/maven-core/lifecycles.html">lifecycle phase</a>: <code>initialize</code>.</li>
+      </ul>
+      <subsection name="Optional Parameters">
+        <table border="0">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Since</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code><a href="#command">&lt;command&gt;</a></code></td>
+            <td><code>String</code></td>
+            <td><code>-</code></td>
+            <td>The git command used to retrieve the current commit hash.<br/><strong>Default value is</strong>: <code>git rev-parse --short HEAD</code>.<br/><strong>User property is</strong>: <code>git.command</code>.<br/></td>
+          </tr>
+        </table>
+      </subsection>
+      <subsection name="Parameter Details">
+        <h4><strong><a name="command">&lt;command&gt;</a></strong></h4>
+        <div>The git command used to retrieve the current commit hash.</div>
+        <ul>
+          <li><strong>Type</strong>: <code>java.lang.String</code></li>
+          <li><strong>Required</strong>: <code>No</code></li>
+          <li><strong>User Property</strong>: <code>git.command</code></li>
+          <li><strong>Default</strong>: <code>git rev-parse --short HEAD</code></li>
+        </ul>
+      </subsection>
+    </section>
+  </body>
+</document>
